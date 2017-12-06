@@ -1,0 +1,46 @@
+body {
+  padding: 50px;
+  font-family: system-ui;
+}
+
+header {
+  text-align: center;
+
+  & .brands {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    & li {
+      flex: 1;
+    }
+  }
+}
+
+#watch {
+  position: relative;
+  z-index: 1;
+}
+#runningApp {
+  position: relative;
+  margin: 0 auto;
+  z-index: 3;
+}
+#crown {
+  position: relative;
+  left: 650px;
+  top: 190px;
+  width: 45px;
+  height: 110px;
+  background-color: transparent;
+  border: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
