@@ -87,6 +87,7 @@ export default class Display {
 
   setScale(newScale) {
     if (this.interactionEnabled === false || this.zoomEnabled === false) return
+
     this.scale = newScale
     var centerPos = this.getDisplayCenter()
     var newViewBox = [

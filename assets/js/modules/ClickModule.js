@@ -17,7 +17,6 @@ export default class ClickModule {
     this.crown.addEventListener('touchend', this.clickFunctionCaches.close)
   }
   open(e) {
-    console.log('open')
     if (dragFlag == true) return
     this.displayElement.removeEventListener('mouseup', this.clickFunctionCaches.open)
     this.displayElement.removeEventListener('touchend', this.clickFunctionCaches.open)
