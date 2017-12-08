@@ -127,6 +127,7 @@ export default class Display {
       this.openApp(clickedCircle)
       return
     }
+
     if (clickedCircle.isSentinel() || clickedCircle === undefined) {
       var nearCircle = this.getNearCircle(clickedPos)
       if (nearCircle == this.currentCenter) {
@@ -192,10 +193,6 @@ export default class Display {
     if (progress < 1) {
       window.requestAnimationFrame(this.snapAnimation.bind(this, circle))
     } else {
-
-      // EGM: Select Sneaker after animation has completed
-      circle.icon.classList.add('selected')
-
       this.currentCenter = circle
       this.interactionEnabled = true
       animationTime = 0
@@ -384,6 +381,15 @@ export default class Display {
         this._getZoomOutRadius.bind(this)
       )
       var newRadius = interpolation(this.scale, this.maxScale, this.minScale, zoomInRadius, zoomOutRadius)
+
+      // deselect all sneakers
+      var svgs = document.querySelectorAll('#icons svg')
+      var nodeListMap = Array.prototype.map;
+      nodeListMap.call(svgs, function(el){ el.classList.remove('selected')});
+
+      // set circle selected
+      this.currentCenter.icon.classList.add('selected')
+
       circle.setRadius(newRadius)
     }
   }
