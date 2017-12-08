@@ -18,13 +18,10 @@ import SneakerList from './modules/SneakerList'
   var origin = SneakerList[0];
   var hex = new Hexagon(new SneakerCircle(origin.filename, origin.iconType));
 
-  for (var i = 1; i < SneakerList.length; i++) {
+  for (var i = 1; i < SneakerList.length-1; i++) {
     var sneaker = SneakerList[i];
     hex.addApp(new SneakerCircle(sneaker.filename, sneaker.iconType));
   }
-  // for (var i = 0; i < 80; i++) {
-  //   hex.addApp(new SneakerCircle("anon", IconType.ANON));
-  // }
 
   var crown = document.getElementById("crown")
 

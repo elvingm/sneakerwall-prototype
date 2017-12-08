@@ -27,6 +27,10 @@ export default class ClickModule {
       clickedPos = [e.touches[0].clientX, e.touches[0].clientY]
     }
 
+    // deselect all sneakers
+    var svgs = this.displayElement.querySelectorAll('svg')
+    var nodeListMap = Array.prototype.map;
+    nodeListMap.call(svgs, function(el){ el.classList.remove('selected')});
     this.display.clicked(this.displayElement, clickedPos)
   }
   close(e) {
@@ -41,5 +45,7 @@ export default class ClickModule {
     currentAnimationModule = null
   }
 
+  deselectAll() {
 
+  }
 }

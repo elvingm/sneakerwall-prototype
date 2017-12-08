@@ -1,8 +1,8 @@
-import {sumCoord,subCoord} from './Utility'
+import { sumCoord, subCoord } from './Utility'
 import IconType from './IconType'
 
 export default class SneakerCircle {
-  constructor (_name, _iconType) {
+  constructor(_name, _iconType) {
     this.sneakerName = _name
     this.radius = 50
     this.coord = []
@@ -10,7 +10,7 @@ export default class SneakerCircle {
 
     this.backgroundColor = this.getRandomColor()
     this.iconType = _iconType
-    console.log(_iconType)
+
     this.icon = this.makeIcon(_iconType)
     this.nearCoords = [[2, 0], [1, 1], [-1, 1], [-2, 0], [-1, -1], [1, -1]]
   }
@@ -108,6 +108,22 @@ export default class SneakerCircle {
       icon.setAttribute('y', -50)
       icon.setAttribute('width', 100)
       icon.setAttribute('height', 100)
+      var shelf = document.createElementNS('http://www.w3.org/2000/svg', 'image')
+      shelf.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '/img/shelf.png')
+      shelf.setAttribute('x', -55)
+      shelf.setAttribute('y', 35)
+      shelf.setAttribute('width', 105)
+      shelf.setAttribute('height', 15)
+      shelf.setAttribute('class', 'shelf')
+      var shadow = document.createElementNS('http://www.w3.org/2000/svg', 'image')
+      shadow.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '/img/shadow.png')
+      shadow.setAttribute('x', -55)
+      shadow.setAttribute('y', 25)
+      shadow.setAttribute('width', 100)
+      shadow.setAttribute('height', 15)
+      shadow.setAttribute('class', 'shadow')
+      svg.appendChild(shadow)
+      svg.appendChild(shelf)
       svg.appendChild(icon)
     }
 

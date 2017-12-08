@@ -57,3 +57,31 @@ button:focus {
   height: 470px;
   user-select: none;
 }
+
+svg {
+  &.selected {
+    background-color: red;
+
+    & .shelf {
+      opacity: 1;
+      visibility: visible;
+    }
+    & .shadow {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  & .shelf {
+    opacity: 0;
+    transition: all 0.35s;
+    visibility: hidden;
+  }
+
+  & .shadow {
+    opacity: 1;
+    transition: all 0.35s;
+    visibility: visible;
+  }
+}
+
