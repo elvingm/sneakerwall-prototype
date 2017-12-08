@@ -33,7 +33,7 @@ export default class DragModule {
     var mouseDiff = subCoord(this.lastMousePos, mousePos)
     if (window.dragFlag == false && Math.max(Math.abs(mouseDiff[0]), Math.abs(mouseDiff[1])) > 2) window.dragFlag = true
     this.lastMousePos = mousePos
-
+    console.log(mouseDiff)
     if (this.display.canMoveViewBoxTo(mouseDiff[0], mouseDiff[1])) {
       this.display.moveViewBox(mouseDiff[0], mouseDiff[1])
       this.display.refresh()

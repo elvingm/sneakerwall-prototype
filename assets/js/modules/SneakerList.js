@@ -1,18 +1,55 @@
 import IconType from './IconType'
 
 const SneakerList = [
-  {
-    "name": "yeezy-frozen",
-    "iconType": IconType.IMAGE
-  },
-  {
-    "name": "jordan-olympic",
-    "iconType": IconType.IMAGE
-  },
-  {
-    "name": "jordan-raptor",
-    "iconType": IconType.IMAGE
-  }
+  { filename: '30.png', iconType: IconType.IMAGE },
+  { filename: '1.png', iconType: IconType.IMAGE },
+  { filename: '2.png', iconType: IconType.IMAGE },
+  { filename: '3.png', iconType: IconType.IMAGE },
+  { filename: '4.png', iconType: IconType.IMAGE },
+  { filename: '5.png', iconType: IconType.IMAGE },
+  { filename: '6.png', iconType: IconType.IMAGE },
+  { filename: '7.png', iconType: IconType.IMAGE },
+  { filename: '8.png', iconType: IconType.IMAGE },
+  { filename: '9.png', iconType: IconType.IMAGE },
+  { filename: '10.png', iconType: IconType.IMAGE },
+  { filename: '11.png', iconType: IconType.IMAGE },
+  { filename: '12.png', iconType: IconType.IMAGE },
+  { filename: '13.png', iconType: IconType.IMAGE },
+  { filename: '14.png', iconType: IconType.IMAGE },
+  { filename: '15.png', iconType: IconType.IMAGE },
+  { filename: '16.png', iconType: IconType.IMAGE },
+  { filename: '17.png', iconType: IconType.IMAGE },
+  { filename: '18.png', iconType: IconType.IMAGE },
+  { filename: '19.png', iconType: IconType.IMAGE },
+  { filename: '20.png', iconType: IconType.IMAGE },
+  { filename: '21.png', iconType: IconType.IMAGE },
+  { filename: '22.png', iconType: IconType.IMAGE },
+  { filename: '23.png', iconType: IconType.IMAGE },
+  { filename: '24.png', iconType: IconType.IMAGE },
+  { filename: '25.png', iconType: IconType.IMAGE },
+  { filename: '26.png', iconType: IconType.IMAGE },
+  { filename: '27.png', iconType: IconType.IMAGE },
+  { filename: '28.png', iconType: IconType.IMAGE },
+  { filename: '29.png', iconType: IconType.IMAGE },
+  { filename: '31.png', iconType: IconType.IMAGE },
+  { filename: '32.png', iconType: IconType.IMAGE },
+  { filename: '33.png', iconType: IconType.IMAGE },
+  { filename: '34.png', iconType: IconType.IMAGE },
+  { filename: '35.png', iconType: IconType.IMAGE },
+  { filename: '36.png', iconType: IconType.IMAGE },
+  { filename: '37.png', iconType: IconType.IMAGE },
+  { filename: '38.png', iconType: IconType.IMAGE },
+  { filename: '39.png', iconType: IconType.IMAGE },
+  { filename: '40.png', iconType: IconType.IMAGE },
+  { filename: '41.png', iconType: IconType.IMAGE },
+  { filename: '42.png', iconType: IconType.IMAGE },
+  { filename: '43.png', iconType: IconType.IMAGE },
+  { filename: '44.png', iconType: IconType.IMAGE },
+  { filename: '45.png', iconType: IconType.IMAGE },
+  { filename: '46.png', iconType: IconType.IMAGE },
+  { filename: '47.png', iconType: IconType.IMAGE },
+  { filename: '48.png', iconType: IconType.IMAGE },
+  { filename: '49.png', iconType: IconType.IMAGE }
 ]
 
 export default SneakerList

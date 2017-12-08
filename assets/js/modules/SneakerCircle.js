@@ -10,6 +10,7 @@ export default class SneakerCircle {
 
     this.backgroundColor = this.getRandomColor()
     this.iconType = _iconType
+    console.log(_iconType)
     this.icon = this.makeIcon(_iconType)
     this.nearCoords = [[2, 0], [1, 1], [-1, 1], [-2, 0], [-1, -1], [1, -1]]
   }
@@ -98,9 +99,9 @@ export default class SneakerCircle {
     svg.setAttribute('viewBox', '-50 -50 100 100')
 
     if (iconType == IconType.IMAGE) {
-      svg.setAttribute('key', 'anon-icon')
+      svg.setAttribute('key', 'sneaker-icon')
 
-      var imageAddr = '/img/sneakers/yeezy-frozen.jpg'
+      var imageAddr = `/img/sneakers/${this.sneakerName}`
       var icon = document.createElementNS('http://www.w3.org/2000/svg', 'image')
       icon.setAttributeNS('http://www.w3.org/1999/xlink', 'href', imageAddr)
       icon.setAttribute('x', -50)
